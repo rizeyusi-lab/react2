@@ -1,13 +1,27 @@
 import './App.css'
 
+const Header2 = () => {
+  return (
+    <header>
+      <h1> header</h1>
+    </header>
+  )
+}
+
+function Header() {
+  return (
+    <header>
+      <h1>header</h1> 
+    </header>
+  )
+}
+
 function App() {
   return (
-    <>
       <div>
-       
-      </div>
-     
-    </>
+     <Header/>
+      <Header2/>
+       </div>
   )
 }
 
