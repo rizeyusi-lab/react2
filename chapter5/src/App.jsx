@@ -1,28 +1,58 @@
 import './App.css'
+import Header from './component/Header'
+import Body from './component/Body'
+import Footer from './component/Footer'
 
-const Header2 = () => {
-  return (
-    <header>
-      <h1> header</h1>
-    </header>
-  )
+function ChildComp(){
+  return <div>child component</div>
 }
 
-function Header() {
-  return (
-    <header>
-      <h1>header</h1> 
-    </header>
-  )
-}
 
+// function App() {
+//   //const name = "이정환";
+//   //const bodyProps = {
+//     //name: "이정환",
+//     //location: "부천시",
+//     //favorList: ["파스타", "빵", "떡볶이"],
+//   //};
+
+//   return (
+//     <div className="App">
+//       <Header />
+//       <Body>
+//         <ChildComp/>
+//         </Body>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// function Counter() {
+//   let count = 0 ;
+//   return (
+//     <div>
+//       <p> Counter : {count}</p>
+//       <button
+//         onclick={()=> {
+//           count++;
+//           console.log(count);
+//         }}
+//         >
+//           Increment
+//         </button>
+//     </div>
+//   );
+// }
 function App() {
   return (
-      <div>
-     <Header/>
-      <Header2/>
-       </div>
-  )
+    <div>
+      <Header />
+      <Body/>
+      <Footer/>
+    </div>
+  );
 }
 
-export default App
+export default App;
